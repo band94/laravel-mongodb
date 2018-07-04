@@ -321,7 +321,7 @@ class Builder extends BaseBuilder
             }
 
             $options = [
-                'typeMap' => ['root' => 'array', 'document' => 'array'],
+                // 'typeMap' => ['root' => 'array', 'document' => 'array'],
             ];
 
             // Add custom query options
@@ -381,7 +381,7 @@ class Builder extends BaseBuilder
             // if ($this->hint)    $cursor->hint($this->hint);
 
             // Fix for legacy support, converts the results to arrays instead of objects.
-            $options['typeMap'] = ['root' => 'array', 'document' => 'array'];
+            // $options['typeMap'] = ['root' => 'array', 'document' => 'array'];
 
             // Add custom query options
             if (count($this->options)) {
